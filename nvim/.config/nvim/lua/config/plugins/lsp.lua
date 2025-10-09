@@ -19,6 +19,7 @@ return {
       require("lspconfig").clangd.setup { capabilities = capabilities }
       require("lspconfig").coq_lsp.setup { capabilities = capabilities }
       require("lspconfig").rust_analyzer.setup { capabilities = capabilities }
+      require("lspconfig").ts_ls.setup { capabilities = capabilities }
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)
