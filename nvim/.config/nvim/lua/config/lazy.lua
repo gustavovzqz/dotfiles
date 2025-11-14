@@ -26,7 +26,7 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    { "blazkowolf/gruber-darker.nvim", config = function() vim.cmd.colorscheme "gruber-darker" end },
+    { "savq/melange-nvim",      config = function() vim.cmd.colorscheme "melange" end },
     { import = "config.plugins" },
   },
   change_detection = {
